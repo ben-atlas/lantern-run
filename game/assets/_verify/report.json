@@ -1,0 +1,990 @@
+[
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 188,
+  "tris": 19316,
+  "materials": 12,
+  "size": [
+   2.663,
+   7.496,
+   3.814
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.043,
+    "edgeDensity": 0.4084
+   },
+   "right": {
+    "coverage": 0.0458,
+    "edgeDensity": 0.2725
+   },
+   "back": {
+    "coverage": 0.0377,
+    "edgeDensity": 0.4111
+   },
+   "left": {
+    "coverage": 0.0553,
+    "edgeDensity": 0.2816
+   }
+  },
+  "error": null,
+  "name": "cable_bundle_pole",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 42,
+  "tris": 2846,
+  "materials": 7,
+  "size": [
+   0.43,
+   1.948,
+   0.611
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.0214,
+    "edgeDensity": 0.2099
+   },
+   "right": {
+    "coverage": 0.025,
+    "edgeDensity": 0.2048
+   },
+   "back": {
+    "coverage": 0.0348,
+    "edgeDensity": 0.1889
+   },
+   "left": {
+    "coverage": 0.0315,
+    "edgeDensity": 0.2213
+   }
+  },
+  "error": null,
+  "name": "clip_lamp_on_pole",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 222,
+  "tris": 7824,
+  "materials": 13,
+  "size": [
+   2.4,
+   3.23,
+   2.24
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.2807,
+    "edgeDensity": 0.2723
+   },
+   "right": {
+    "coverage": 0.1727,
+    "edgeDensity": 0.451
+   },
+   "back": {
+    "coverage": 0.2727,
+    "edgeDensity": 0.2954
+   },
+   "left": {
+    "coverage": 0.1573,
+    "edgeDensity": 0.4051
+   }
+  },
+  "error": null,
+  "name": "food_stall_awning",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 153,
+  "tris": 8440,
+  "materials": 11,
+  "size": [
+   1.95,
+   1.173,
+   0.963
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.3017,
+    "edgeDensity": 0.4668
+   },
+   "right": {
+    "coverage": 0.1989,
+    "edgeDensity": 0.3615
+   },
+   "back": {
+    "coverage": 0.1984,
+    "edgeDensity": 0.2555
+   },
+   "left": {
+    "coverage": 0.2219,
+    "edgeDensity": 0.401
+   }
+  },
+  "error": null,
+  "name": "fruit_stall_table",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 41,
+  "tris": 2764,
+  "materials": 7,
+  "size": [
+   0.654,
+   0.783,
+   0.396
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.2678,
+    "edgeDensity": 0.1006
+   },
+   "right": {
+    "coverage": 0.1875,
+    "edgeDensity": 0.0966
+   },
+   "back": {
+    "coverage": 0.2839,
+    "edgeDensity": 0.0703
+   },
+   "left": {
+    "coverage": 0.186,
+    "edgeDensity": 0.0778
+   }
+  },
+  "error": null,
+  "name": "gas_cylinder_pair",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": "back",
+  "meshes": 141,
+  "tris": 4230,
+  "materials": 7,
+  "size": [
+   1.435,
+   1.6,
+   0.492
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.2275,
+    "edgeDensity": 0.2009
+   },
+   "right": {
+    "coverage": 0.0897,
+    "edgeDensity": 0.1614
+   },
+   "back": {
+    "coverage": 0.2601,
+    "edgeDensity": 0.1212
+   },
+   "left": {
+    "coverage": 0.1157,
+    "edgeDensity": 0.219
+   }
+  },
+  "error": null,
+  "name": "hanging_duck_rack",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 65,
+  "tris": 8796,
+  "materials": 13,
+  "size": [
+   0.565,
+   1.753,
+   0.369
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.134,
+    "edgeDensity": 0.1663
+   },
+   "right": {
+    "coverage": 0.0907,
+    "edgeDensity": 0.1719
+   },
+   "back": {
+    "coverage": 0.143,
+    "edgeDensity": 0.1046
+   },
+   "left": {
+    "coverage": 0.0987,
+    "edgeDensity": 0.1525
+   }
+  },
+  "error": null,
+  "name": "hero_runner",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 211,
+  "tris": 7652,
+  "materials": 12,
+  "size": [
+   1.598,
+   0.891,
+   0.751
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.2462,
+    "edgeDensity": 0.2762
+   },
+   "right": {
+    "coverage": 0.1789,
+    "edgeDensity": 0.3412
+   },
+   "back": {
+    "coverage": 0.2439,
+    "edgeDensity": 0.2489
+   },
+   "left": {
+    "coverage": 0.1845,
+    "edgeDensity": 0.3464
+   }
+  },
+  "error": null,
+  "name": "ice_fish_tray_trestle",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 93,
+  "tris": 3708,
+  "materials": 6,
+  "size": [
+   6.06,
+   0.639,
+   0.181
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.0107,
+    "edgeDensity": 0.3728
+   },
+   "right": {
+    "coverage": 0.0068,
+    "edgeDensity": 0.5293
+   },
+   "back": {
+    "coverage": 0.0123,
+    "edgeDensity": 0.4057
+   },
+   "left": {
+    "coverage": 0.0056,
+    "edgeDensity": 0.6132
+   }
+  },
+  "error": null,
+  "name": "lantern_string_run",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 290,
+  "tris": 6220,
+  "materials": 12,
+  "size": [
+   7.826,
+   5.535,
+   2.4
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.2149,
+    "edgeDensity": 0.3307
+   },
+   "right": {
+    "coverage": 0.1099,
+    "edgeDensity": 0.3108
+   },
+   "back": {
+    "coverage": 0.2145,
+    "edgeDensity": 0.3229
+   },
+   "left": {
+    "coverage": 0.1104,
+    "edgeDensity": 0.3078
+   }
+  },
+  "error": null,
+  "name": "market_arch_gate",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": "back",
+  "meshes": 25,
+  "tris": 1524,
+  "materials": 6,
+  "size": [
+   0.9,
+   1.1,
+   0.341
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.2631,
+    "edgeDensity": 0.0628
+   },
+   "right": {
+    "coverage": 0.0325,
+    "edgeDensity": 0.0676
+   },
+   "back": {
+    "coverage": 0.2486,
+    "edgeDensity": 0.0343
+   },
+   "left": {
+    "coverage": 0.0936,
+    "edgeDensity": 0.0636
+   }
+  },
+  "error": null,
+  "name": "neon_sign_box",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 121,
+  "tris": 4442,
+  "materials": 17,
+  "size": [
+   1.869,
+   1.995,
+   0.791
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.2795,
+    "edgeDensity": 0.2313
+   },
+   "right": {
+    "coverage": 0.16,
+    "edgeDensity": 0.2334
+   },
+   "back": {
+    "coverage": 0.2483,
+    "edgeDensity": 0.2741
+   },
+   "left": {
+    "coverage": 0.1426,
+    "edgeDensity": 0.2293
+   }
+  },
+  "error": null,
+  "name": "noodle_cart",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 31,
+  "tris": 3520,
+  "materials": 5,
+  "size": [
+   0.6,
+   0.781,
+   0.6
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.175,
+    "edgeDensity": 0.1568
+   },
+   "right": {
+    "coverage": 0.1743,
+    "edgeDensity": 0.1571
+   },
+   "back": {
+    "coverage": 0.1746,
+    "edgeDensity": 0.1572
+   },
+   "left": {
+    "coverage": 0.1743,
+    "edgeDensity": 0.156
+   }
+  },
+  "error": null,
+  "name": "paper_lantern_large",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 121,
+  "tris": 5480,
+  "materials": 12,
+  "size": [
+   0.698,
+   1.174,
+   1.782
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.0787,
+    "edgeDensity": 0.2472
+   },
+   "right": {
+    "coverage": 0.161,
+    "edgeDensity": 0.1841
+   },
+   "back": {
+    "coverage": 0.0965,
+    "edgeDensity": 0.2629
+   },
+   "left": {
+    "coverage": 0.1564,
+    "edgeDensity": 0.1729
+   }
+  },
+  "error": null,
+  "name": "parked_scooter",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 30,
+  "tris": 3744,
+  "materials": 6,
+  "size": [
+   0.383,
+   0.947,
+   0.378
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.1798,
+    "edgeDensity": 0.3077
+   },
+   "right": {
+    "coverage": 0.1786,
+    "edgeDensity": 0.3203
+   },
+   "back": {
+    "coverage": 0.1776,
+    "edgeDensity": 0.2495
+   },
+   "left": {
+    "coverage": 0.1791,
+    "edgeDensity": 0.2556
+   }
+  },
+  "error": null,
+  "name": "plastic_stool_stack",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 73,
+  "tris": 4516,
+  "materials": 8,
+  "size": [
+   0.566,
+   1.027,
+   0.455
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.2952,
+    "edgeDensity": 0.2641
+   },
+   "right": {
+    "coverage": 0.2405,
+    "edgeDensity": 0.2559
+   },
+   "back": {
+    "coverage": 0.2991,
+    "edgeDensity": 0.3226
+   },
+   "left": {
+    "coverage": 0.2445,
+    "edgeDensity": 0.3039
+   }
+  },
+  "error": null,
+  "name": "produce_crate_stack",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 90,
+  "tris": 6348,
+  "materials": 13,
+  "size": [
+   0.6,
+   1.824,
+   0.388
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.1484,
+    "edgeDensity": 0.2066
+   },
+   "right": {
+    "coverage": 0.1092,
+    "edgeDensity": 0.1725
+   },
+   "back": {
+    "coverage": 0.1639,
+    "edgeDensity": 0.0996
+   },
+   "left": {
+    "coverage": 0.1118,
+    "edgeDensity": 0.1572
+   }
+  },
+  "error": null,
+  "name": "pursuer_enforcer",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": "back",
+  "meshes": 158,
+  "tris": 3848,
+  "materials": 16,
+  "size": [
+   3.52,
+   4.2,
+   1.593
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.3792,
+    "edgeDensity": 0.3464
+   },
+   "right": {
+    "coverage": 0.1713,
+    "edgeDensity": 0.1838
+   },
+   "back": {
+    "coverage": 0.3687,
+    "edgeDensity": 0.1106
+   },
+   "left": {
+    "coverage": 0.1643,
+    "edgeDensity": 0.1846
+   }
+  },
+  "error": null,
+  "name": "rolled_shutter_shopfront",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 55,
+  "tris": 4368,
+  "materials": 8,
+  "size": [
+   1.491,
+   0.879,
+   0.999
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.1653,
+    "edgeDensity": 0.1305
+   },
+   "right": {
+    "coverage": 0.1455,
+    "edgeDensity": 0.1845
+   },
+   "back": {
+    "coverage": 0.1828,
+    "edgeDensity": 0.1187
+   },
+   "left": {
+    "coverage": 0.1406,
+    "edgeDensity": 0.0867
+   }
+  },
+  "error": null,
+  "name": "rubbish_bag_pile",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": "back",
+  "meshes": 675,
+  "tris": 9996,
+  "materials": 14,
+  "size": [
+   6.7,
+   11,
+   1.302
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.3202,
+    "edgeDensity": 0.5256
+   },
+   "right": {
+    "coverage": 0.0832,
+    "edgeDensity": 0.395
+   },
+   "back": {
+    "coverage": 0.3496,
+    "edgeDensity": 0.09
+   },
+   "left": {
+    "coverage": 0.0833,
+    "edgeDensity": 0.3894
+   }
+  },
+  "error": null,
+  "name": "shophouse_facade",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 73,
+  "tris": 6042,
+  "materials": 13,
+  "size": [
+   1.8,
+   1.293,
+   0.581
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.2048,
+    "edgeDensity": 0.1761
+   },
+   "right": {
+    "coverage": 0.1286,
+    "edgeDensity": 0.2501
+   },
+   "back": {
+    "coverage": 0.2217,
+    "edgeDensity": 0.2826
+   },
+   "left": {
+    "coverage": 0.0946,
+    "edgeDensity": 0.2932
+   }
+  },
+  "error": null,
+  "name": "skewer_grill_cart",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 40,
+  "tris": 6508,
+  "materials": 8,
+  "size": [
+   0.666,
+   0.954,
+   0.492
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.1818,
+    "edgeDensity": 0.4427
+   },
+   "right": {
+    "coverage": 0.1827,
+    "edgeDensity": 0.439
+   },
+   "back": {
+    "coverage": 0.1943,
+    "edgeDensity": 0.3824
+   },
+   "left": {
+    "coverage": 0.1915,
+    "edgeDensity": 0.3941
+   }
+  },
+  "error": null,
+  "name": "steam_basket_tower",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 30,
+  "tris": 2724,
+  "materials": 18,
+  "size": [
+   1.414,
+   0.988,
+   0.7
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.2151,
+    "edgeDensity": 0.3252
+   },
+   "right": {
+    "coverage": 0.187,
+    "edgeDensity": 0.3523
+   },
+   "back": {
+    "coverage": 0.2016,
+    "edgeDensity": 0.3253
+   },
+   "left": {
+    "coverage": 0.1869,
+    "edgeDensity": 0.3302
+   }
+  },
+  "error": null,
+  "name": "steel_prep_table",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 292,
+  "tris": 8998,
+  "materials": 11,
+  "size": [
+   7.242,
+   3.915,
+   6.097
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.1751,
+    "edgeDensity": 0.2595
+   },
+   "right": {
+    "coverage": 0.1723,
+    "edgeDensity": 0.2794
+   },
+   "back": {
+    "coverage": 0.1646,
+    "edgeDensity": 0.2166
+   },
+   "left": {
+    "coverage": 0.158,
+    "edgeDensity": 0.2124
+   }
+  },
+  "error": null,
+  "name": "tarp_canopy_section",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 30,
+  "tris": 2804,
+  "materials": 6,
+  "size": [
+   0.552,
+   0.956,
+   0.625
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.2065,
+    "edgeDensity": 0.0565
+   },
+   "right": {
+    "coverage": 0.2159,
+    "edgeDensity": 0.058
+   },
+   "back": {
+    "coverage": 0.2495,
+    "edgeDensity": 0.0479
+   },
+   "left": {
+    "coverage": 0.2416,
+    "edgeDensity": 0.0456
+   }
+  },
+  "error": null,
+  "name": "water_barrel_blue",
+  "problems": []
+ },
+ {
+  "ok": true,
+  "mounts": null,
+  "meshes": 25,
+  "tris": 1716,
+  "materials": 7,
+  "size": [
+   0.543,
+   0.36,
+   0.491
+  ],
+  "groundOffset": 0,
+  "centreOffset": [
+   0,
+   0
+  ],
+  "sides": {
+   "front": {
+    "coverage": 0.1086,
+    "edgeDensity": 0.1439
+   },
+   "right": {
+    "coverage": 0.1016,
+    "edgeDensity": 0.1214
+   },
+   "back": {
+    "coverage": 0.1133,
+    "edgeDensity": 0.1061
+   },
+   "left": {
+    "coverage": 0.1031,
+    "edgeDensity": 0.1035
+   }
+  },
+  "error": null,
+  "name": "wok_burner_stand",
+  "problems": []
+ }
+]
