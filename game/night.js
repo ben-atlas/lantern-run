@@ -96,20 +96,61 @@
  * F. A SHADE, so a lamp's upward half does not land on the facades. See SHADE_GLSL.
  *
  * MEASURED ON THE ASSEMBLED GAME, `node gate.mjs nightmarket`, eight frames through
- * `work/measure.mjs`, with CLAIMS.md's photographic bar in brackets:
+ * `work/measure.mjs`, at a 1280x720 desktop capture:
  *
- *   dark_frac 0.300 [0.339, band 0.22-0.50]   p98 250 [228]         pool 190 [182]
- *   two_temp  0.104 [0.105]                   median 71 [45]
- *   ground median 16 [41]                     ground p95 183 [140]
- *   ground worst-column median 13 [21]        worst-column p95 63 [88]
+ *   dark_frac 0.300      p98 250      pool 190      two_temp 0.104      median 71
+ *   ground median 16     ground p95 183
+ *   ground worst-column median 13     worst-column p95 63
  *
- * THE WORST-COLUMN PAIR IS SHORT OF ITS TARGET (20 and 85) AND FIVE ROUNDS OF WORK DID NOT CLOSE
- * IT. What that column measures is the off-lane apron, the pavement between the kerb and the
- * stall fronts, and the honest state of it is written up under the cluster loop below. Do not read
- * the earlier figure of 17/97 in this file's history as a regression from this file: the lane's
- * emitter set changed underneath it mid-round, so that baseline is not reproducible, and five
- * runs of near-identical lighting on the CURRENT lane returned ground medians of 41, 33, 20, 17
- * and 16. The gate's route moves these numbers further than any constant in this file does.
+ * THE BAR FIGURES THAT USED TO SIT IN BRACKETS BESIDE THESE HAVE BEEN REMOVED, and the reason is
+ * worth more than the numbers were. `measure.mjs` computes every one of these over a FRAME-
+ * RELATIVE region: a 6 percent inset for the whole-frame statistics, y 8-45 percent for claim 5,
+ * y 72-96 percent for claim 6. A frame-relative band covers a different amount of WORLD at a
+ * different aspect ratio. In a portrait frame the bottom quarter is ground a few metres from the
+ * camera, and therefore a few metres from the lamps; in a landscape frame the same band runs far
+ * down the lane into the dark and averages the two together. The bar was captured square
+ * (1280x1280), this build landscape (1280x720) and its phone tier portrait (390x844), so those
+ * comparisons were never like for like.
+ *
+ * The lead proved it by holding everything constant but the frame shape: this same DESKTOP tier,
+ * same lane, same lamps, same shader, run in a 390x844 viewport, measured 24 and 160 on the
+ * worst-column pair against 13 and 35 in landscape. Nothing about the lighting changed.
+ *
+ * WHAT SURVIVES, and what to trust in this file: the absolute numbers above for a 1280x720
+ * capture, and any comparison between two arms measured AT THE SAME VIEWPORT — which is what
+ * every A/B in this file is.
+ *
+ * THE MAGNITUDE IS BACK, AND IT IS WORSE THAN THE CONFOUND MADE IT LOOK. The fix was not to
+ * normalise the band across aspect ratios but to stop creating the aspect difference: the gate
+ * grew a `--square` measurement pass that captures at 1280x1280 against the reference set's own
+ * 1280x1280. Like for like, two samples, medians over eight frames, the lead's numbers:
+ *
+ *                        bar     square 1   square 2   (landscape, for scale)
+ *   ground worst median   21        12         12              10
+ *   ground worst p95      88        31         35              49
+ *   dark_frac          0.339     0.401      0.375           0.351
+ *   upper_edges        0.288     0.359      0.344           0.435
+ *
+ * So the apron is roughly 40 percent short on the median and about two and a half times short on
+ * the highlight, stable across samples. THE PORTRAIT READING OF 24/160 WAS THE ANOMALY, not the
+ * landscape one, and "the phone tier beats the desktop tier on the deciding property" was never a
+ * real result at any point in this build's history. Do not go looking for what the phone path was
+ * doing right; it was not doing anything.
+ *
+ * Two caveats travel with the square pass and should not be dropped: it does not make the sets
+ * equivalent, because the game picks its own field of view and the photographer picked theirs, so
+ * it removes the dominant term and leaves one that is at least inspectable by eye; and a square
+ * frame is not the shape anyone plays in, so it is a measurement pass only and the filmstrip a
+ * critic judges stays 16:9.
+ *
+ * THE APRON IS SHORT, then, by a number as well as by eye. Two critics found it on whole frames
+ * before any of this arithmetic existed, four attempted fixes did not move it, and the like-for-
+ * like instrument now agrees with them. The honest state of it is written up under the cluster
+ * loop below. Do not read the earlier figure of 17/97 in this
+ * file's history as a regression from this file either: the lane's emitter set changed underneath
+ * it mid-round, so that baseline is not reproducible, and five runs of near-identical lighting on
+ * the CURRENT lane returned ground medians of 41, 33, 20, 17 and 16. Between the route and the
+ * viewport, these columns move further than any constant in this file does.
  *
  * And the two-patches-of-the-same-ground reading, taken by rule inside the claim-6 ground band
  * on eight gate frames (work/eng_light/patches.mjs):
@@ -379,10 +420,12 @@ export function createNight(THREE, renderer, scene, opts = {}) {
      * own gate, median luma 220 against the bar's 45, `dark_frac` 0.069 against 0.339, and ground
      * median 187 against 41. Fifteen times more reflective ground needs fifteen times less light.
      *
-     * MEASURED ON THE ASSEMBLED GAME at 2.6, eight gate frames through `work/measure.mjs`, with
-     * the CLAIMS.md bar in brackets: dark_frac 0.229 [0.339, band 0.22-0.50], median 57 [45],
-     * p98 247 [228], pool 197 [182], two_temp 0.086 [0.105], ground median 44 [41], ground p95
-     * 174 [140]. All six claims pass.
+     * MEASURED ON THE ASSEMBLED GAME at 2.6, eight gate frames through `work/measure.mjs` at a
+     * 1280x720 capture: dark_frac 0.229, median 57, p98 247, pool 197, two_temp 0.086, ground
+     * median 44, ground p95 174. The bar figures that used to sit beside these are gone; see the
+     * file header on why a frame-relative band is not comparable across aspect ratios. What
+     * calibrated this number was the SAME-VIEWPORT sweep — 40, 14, 5, 3.0, 2.6, 2.5 — and that
+     * comparison is unaffected.
      *
      * SO THIS NUMBER IS A COMPENSATION and it is the line to change if the road is ever darkened
      * toward the lock. Nothing else needs to move with it: the falloff, the two temperatures and
@@ -1073,8 +1116,12 @@ export function createNight(THREE, renderer, scene, opts = {}) {
     //   14 slots  run B  0.502 FAIL    -          -            16          70        0.066
     //   24 slots  run A  0.441         46         49           18          99        0.104
     //   24 slots  run B  0.447         -          -            19          98        0.090
-    //   bar              0.339         45         41           21          88        0.105
-    //                    [band 0.22-0.50]
+    //
+    // All four rows are 390x844 portrait captures, which is why this table is still good: it is
+    // portrait against portrait throughout. The bar row that used to close it has been removed —
+    // the bar was shot square and a frame-relative band is not comparable across aspect ratios
+    // (see the file header). `dark_frac`'s 0.22-0.50 band is a claim threshold rather than a
+    // comparison, so the FAIL markings stand.
     //
     // WHAT BOTH SAMPLES AGREE ON is the decision: at 14 the phone frame is not "a bit darker",
     // it is outside claim 1's band at the BOTTOM — half the frame under luma 24 against a ceiling
