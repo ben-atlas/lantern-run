@@ -1063,10 +1063,29 @@ export function createNight(THREE, renderer, scene, opts = {}) {
     // slots carry CLUSTERS one of them can stand for ten lamps. So the phone keeps only eight
     // real lights and spends the saving on pool slots.
     //
-    // 14 was the phone pool before clustering existed, when a slot meant one lamp, and leaving it
-    // there afterwards cost the phone the thing the clustering had just fixed: measured on the
-    // gate's own phone run, the darkest ground column read 14 against the desktop's 17 and its p95
-    // read 75 against 97, so both of claim 6's numbers failed on phone while passing on desktop.
+    // 14 was the phone pool before clustering existed, when a slot meant one lamp. Leaving it
+    // there afterwards is a claim failure. Both arms were measured on the same build with
+    // `gate.mjs --phone`, TWICE, by two people, and both samples are given because they disagree
+    // on one column and agreeing to hide that would be the dishonest version:
+    //
+    //                    dark_frac   median   ground med   worst med   worst p95   two_temp
+    //   14 slots  run A  0.512 FAIL    24         22           14         117        0.151
+    //   14 slots  run B  0.502 FAIL    -          -            16          70        0.066
+    //   24 slots  run A  0.441         46         49           18          99        0.104
+    //   24 slots  run B  0.447         -          -            19          98        0.090
+    //   bar              0.339         45         41           21          88        0.105
+    //                    [band 0.22-0.50]
+    //
+    // WHAT BOTH SAMPLES AGREE ON is the decision: at 14 the phone frame is not "a bit darker",
+    // it is outside claim 1's band at the BOTTOM — half the frame under luma 24 against a ceiling
+    // of 0.50 — because a quarter of the lamps the desktop represents are simply absent.
+    //
+    // WHERE THEY DISAGREE is worst p95 at 14 slots: 117 in one sample and 70 in the other, against
+    // a stable 98-99 at 24. The 117 was route noise. I had written an argument for why that number
+    // should be discounted anyway — a high percentile against a halved median — and the argument
+    // was sound, but it was defending against a number that on a second sample was never there.
+    // The gate's route moves this column further than the setting does, which is the standing
+    // hazard with every ground statistic in this file: take two samples before believing one.
     liveBudget = phone ? Math.min(8, lights.length) : lights.length;
     poolLimit = Math.min(POOL_SLOTS, phone ? Math.min(24, o.poolSlots) : o.poolSlots);
     glowLimit = Math.min(GLOW_SLOTS, phone ? Math.min(72, o.glowSlots) : o.glowSlots);
